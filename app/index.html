@@ -10,7 +10,8 @@
       <base href="/"/>
   </head>
 
-  <body>
+<!--  <body>-->
+  <body ng-controller="homeController as home">
 <!--
     <h1>Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
@@ -18,12 +19,14 @@
     and Electron <script>document.write(process.versions.electron)</script>.
       mijcc
 -->
-<!--      {{home.welcome}}-->
+      {{home.welcome}}
 
+<!--
       <a ui-sref="home" ui-sref-active="active">home</a>
     <a ui-sref="about" ui-sref-active="active">About</a>
 
     <ui-view></ui-view>
+-->
 
 
   </body>

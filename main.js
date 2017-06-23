@@ -12,7 +12,8 @@ function createWindow() {
         height: 600
     })
     win.loadURL(url.format({
-        pathname: path.join(__dirname, '/ea-ionic/www/index.html'),
+//        pathname: path.join(__dirname, '/ea-ionic/www/index.html'),
+        pathname: path.join(__dirname, '/app/index.html'),
         protocol: 'file:',
         slashes: true,
         toolbar: false
