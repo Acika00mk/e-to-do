@@ -1,5 +1,6 @@
 const {
-    app, BrowserWindow
+    app,
+    BrowserWindow
 } = require('electron')
 const path = require('path')
 const url = require('url')
@@ -7,17 +8,18 @@ let win
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 800
-        , height: 600
+        width: 800,
+        height: 600
     })
     win.loadURL(url.format({
-            pathname: path.join(__dirname, 'index.html')
-            , protocol: 'file:'
-            , slashes: true,
-        toolbar : false
-        }))
-        // Open the DevTools.
-        //  win.webContents.openDevTools()
+        pathname: path.join(__dirname, '/ea-ionic/www/index.html'),
+        protocol: 'file:',
+        slashes: true,
+        toolbar: false
+    }))
+    // Open the DevTools.
+    //  win.webContents.openDevTools()
+
     win.on('closed', () => {
         win = null
     })
