@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html ng-app="ea">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
 
-      <script src="../node_modules/angular/angular.js"></script>
-      <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-      <script src="setup.js"></script>
-      <base href="/"/>
-  </head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="setup.js"></script>
+    <base href="/" />
+</head>
 
 <!--  <body>-->
-  <body ng-controller="homeController as home">
-<!--
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-      mijcc
--->
-      {{home.welcome}}
 
-<!--
+<body ng-controller="homeController as home">
+    {{home.welcome}}
+
+    <audio controls autoplay>
+        <source src="http://stream.srg-ssr.ch/m/rsj/mp3_128">
+    </audio>
+
+    <!--
       <a ui-sref="home" ui-sref-active="active">home</a>
     <a ui-sref="about" ui-sref-active="active">About</a>
 
@@ -29,5 +28,6 @@
 -->
 
 
-  </body>
+</body>
+
 </html>
